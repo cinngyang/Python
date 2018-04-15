@@ -13,4 +13,11 @@ step 6: create app<br>
 C:\Data\Web\mysite>python manage.py startapp polls <br>
 step 7: Write View  polls/views.py<br>
 step 8: setup url link to view polls/url.py<br>
-step 9: setup url link mysite/url.py <br> 
+step 9: setup url link mysite/url.py <p>
+
+setup database<br>
+C:\Data\Web\mysite>python manage.py migrate<br>
+C:\Data\Web\mysite>python manage.py createsuperuser<br>
+Create dataTable(Create model comment)
+C:\Data\Web\mysite>python manage.py makemigrations
+C:\Data\Web\mysite>python manage.py migrate
