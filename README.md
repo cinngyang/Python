@@ -1,5 +1,8 @@
 # Python
 Python 學習<br>
+當發現也有 python ggplot真的很高興<br>
+$conda install -c conda-forge ggplot<br>
+
 Django (Django 2.0.4/SQLite)<br>
 pip install django<br>
 Step 1: PS C:\Data\Web> easy_install django (using winfown+x & chaned to file path) <br>
