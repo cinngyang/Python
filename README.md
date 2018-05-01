@@ -2,9 +2,9 @@
 Python 學習<br>
 
 Python 學習
-[Class](/ClassMethod.ipynb/) 
-[Pandas](/Python-Pandas.ipynb/)
-[matplotlib](/matplotlib.ipynb/)
++ [Class](/ClassMethod.ipynb/) 
++ [Pandas](/Python-Pandas.ipynb/)
++ [matplotlib](/matplotlib.ipynb/)
 
 +++
 當發現也有 python ggplot真的很高興<br>
