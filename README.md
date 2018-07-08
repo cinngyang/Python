@@ -1,9 +1,8 @@
 # Python
-Python 學習<br>
-
 Python 學習
 + [Class](/ClassMethod.ipynb/) 
 + [Pandas](/Python-Pandas.ipynb/)
++ [LinearRegressor](LinearRegressor1.ipynb)
 + [matplotlib](/matplotlib.ipynb/)
 
 ***
@@ -22,7 +21,7 @@ step 2: django-admin --version (testing) <br>
 step 3: django-admin startproject mysite <br>
 step 4: change to user website dir <br>
 step 4.1 modify time zone (settings.py / LANGUAGE_CODE = 'zh-hant' TIME_ZONE = 'Asia/Taipei' ) <p>
-  
+
 step 5: C:\Data\Web\mysite> python manage.py runserver <p>
 step 6: create app<br>
 C:\Data\Web\mysite>python manage.py startapp polls <br>
