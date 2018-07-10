@@ -1,4 +1,6 @@
 seaborn 熱力圖
++ plt.subplots(figsize=(9, 9))
++ sns.heatmap(dtCor, annot=True, vmax=1, square=True, cmap="Blues")
 
 + Pandas
   + P3806[['WDD', 'PRODUCT_NO']] = P3806[['WDD', 'PRODUCT_NO']].astype(str)
