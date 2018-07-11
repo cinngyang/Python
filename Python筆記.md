@@ -1,3 +1,11 @@
+基本演算法
+
++ 線性迴歸
+  + Sample-linear Regression
++ Logistic 迴歸
++ 貝氏分類器
++ 降維
+
 seaborn 熱力圖
 
 + Pandas
