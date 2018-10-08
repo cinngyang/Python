@@ -47,3 +47,5 @@ ret=reponse.json()
 + 装饰器的返回值也是一个函数/类对象
 ## Reference
 [Python 装饰器](https://foofish.net/python-decorator.html)<br>
+[使用 Flask-RESTful 设计 RESTful API](http://www.pythondoc.com/Flask-RESTful/quickstart.html)<br>
+[透過 curl、Python、Postman 來 Request API](https://jzchangmark.wordpress.com/2016/06/12/%E9%80%8F%E9%81%8E-curl%E3%80%81python%E3%80%81postman-%E4%BE%86-request-api/)<br>
