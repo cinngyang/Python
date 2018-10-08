@@ -1,0 +1,6 @@
+使用 Flask 建立 RESTful API
+****
+背景知識<p>
++ 装饰器的返回值也是一个函数/类对象
+## Reference
+[Python 装饰器](https://foofish.net/python-decorator.html)<br>
