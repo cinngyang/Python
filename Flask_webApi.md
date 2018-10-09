@@ -22,7 +22,7 @@ def get_country_data():
     version=request.args.get('version')
     
     dbcon=cn.OracCn()    
-    strsql="select  *  from dbo.R_FCST_H H where H.version='"+version+"' and BU='"+BU+"' "
+    strsql="select  *  from dbo.Table H where H.version='"+version+"' and BU='"+BU+"' "
     dt=dbcon.ExecMSSql_Commend(dbcon.lexmsdb1,'BUDataCenter',strsql)
     return dt.to_json(orient='index')    
 
@@ -41,7 +41,7 @@ import requests
 import pandas as pd
 
 services='http://127.0.0.1:8000/api/winners'
-parmsVal={'version':'20181006BEF','BU':'NON-AUO'}
+parmsVal={'version':'20181006BEF','BU':'BU1'}
 reponse=requests.get(services,params=parmsVal)
 ret=reponse.json()
 dt=pd.DataFrame.from_dict(ret, orient='index')
