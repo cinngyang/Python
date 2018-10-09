@@ -1,45 +1,56 @@
 使用 Flask 建立 RESTful API
 
-<code>
+<pre><code>
 #service.py
+#取得工作路徑
+import os
+wPath=os.path.abspath('.')
+os.chdir(wPath)
+
 from flask import Flask,request,abort
-from sqlalchemy import create_engine
-import pandas as pd
 from bson.json_util import dumps, default
+import ConnectDB as cn
+import pandas as pd
+
 
 app=Flask(__name__)
 
-@app.route('/api/Worker1')
+@app.route('/api/winners')
 def get_country_data():    
  
-    query_dict={} 
-    for key in ['BU']:
-        arg=request.args.get(key)
-        if arg:
-            query_dict[key]=arg
-            
-    DB_CONNECT_STRING = 'mssql+pymssql://usr:pwd@msdb1:1433/DB1'
-    engine = create_engine(DB_CONNECT_STRING, echo=True)
-    strsql="select * from dbo.Hello "
-    connection = engine.connect()
-    dt=pd.read_sql_query(strsql,connection)
-    dtjson=dt.to_json(orient='split')
-    return dtjson 
+    BU=request.args.get('BU')
+    version=request.args.get('version')
+    
+    dbcon=cn.OracCn()    
+    strsql="select  *  from dbo.R_FCST_H H where H.version='"+version+"' and BU='"+BU+"' "
+    dt=dbcon.ExecMSSql_Commend(dbcon.lexmsdb1,'BUDataCenter',strsql)
+    return dt.to_json(orient='index')    
 
     
 if __name__=="__main__":
    app.run(port=8000,debug=True)
-</code>
+   
+</code><pre>
 
-<code>
+<pre><code>
 #API.py
+import os
+wPath=os.path.abspath('.')
+os.chdir(wPath)
 import requests
+import pandas as pd
 
-services='http://127.0.0.1:8000/api/Worker1'
-parmsVal={'BU':'AUO'}
+services='http://127.0.0.1:8000/api/winners'
+parmsVal={'version':'20181006BEF','BU':'NON-AUO'}
 reponse=requests.get(services,params=parmsVal)
 ret=reponse.json()
-</code>
+dt=pd.DataFrame.from_dict(ret, orient='index')
+
+</code></pre>
+
+
+
+
 
 
 ****
