@@ -24,6 +24,9 @@ dt=pd.read_sql_query(strsql,connection)
 
 </code></pre>
 
+strSql="select {0} from {1}"
+strSql=strSql.format('emp_no','emp_data')
+
 ## Reference
 [sqlalchemy学习笔记](https://segmentfault.com/a/1190000006949536)<br>
 [Engine Configuration](https://docs.sqlalchemy.org/en/latest/core/engines.html?highlight=create_engine#database-urls)<br>
