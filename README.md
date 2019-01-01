@@ -1,6 +1,7 @@
 # Python
 Python 學習
-+ [Class](/ClassMethod.ipynb/) 
++ [Class](/SampleCode/ClassMethod.ipynb) 
++ [基本資料操作](/SampleCode/Python資料結構.ipynb)
 + [Pandas](/Python-Pandas.ipynb/)
 + [LinearRegressor](LinearRegressor1.ipynb)
 + [matplotlib](/matplotlib.ipynb/)
