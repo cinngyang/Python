@@ -24,7 +24,7 @@ class MyMail():
     
     def __init__(self):
         self.user='cinng.yang@gmail.com'
-        self.pwd='$p4319apc'
+        self.pwd='XXXXXX'
         self.server='smtp.gmail.com'
         self.port=465
     
