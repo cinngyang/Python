@@ -1,0 +1,77 @@
+20200117 08:41:22,Program Start User=D:\python\外包管理 Path=chinyang , 
+ FunName=GetOpenPo  RepFile=ExcelFule  
+20200117 09:02:51,Program Start ,User=chinyang ,Path=D:\python\外包管理  ,FunName=GetOpenPo  ,RepFile=ExcelFule
+20200117 09:03:12,Program Start ,User=chinyang ,Path=D:\python\外包管理  ,FunName=GetOpenPo  ,RepFile=ExcelFule
+20200117 09:03:52,Program Start ,User=chinyang ,Path=D:\python\外包管理  ,FunName=GetOpenPo  ,RepFile=ExcelFule
+20200117 09:04:20,Program Start ,User=chinyang ,Path=D:\python\外包管理  ,FunName=GetOpenPo  ,RepFile=ExcelFule
+20200117 09:04:54,Program Start ,User=chinyang ,Path=D:\python\外包管理  ,FunName=GetPkgOspo  ,RepFile=ExcelFule
+20200117 09:05:10,Program Start ,User=chinyang ,Path=D:\python\外包管理  ,FunName=GetPkgOspo  ,RepFile=ExcelFule
+20200117 09:05:10,<class 'NameError'>
+20200117 09:21:35,<class 'UnboundLocalError'>
+20200117 09:22:10,<class 'UnboundLocalError'>
+20200117 09:23:37,<class 'UnboundLocalError'>
+20200117 09:23:53,<class 'UnboundLocalError'>
+20200117 09:47:17,<class 'UnboundLocalError'>
+20200117 09:49:58,<class 'UnboundLocalError'>
+20200117 09:51:02,<class 'UnboundLocalError'>
+20200117 10:51:10,Program Start ,User=chinyang ,Path=d:\python\外包管理  ,FunName=C:\Users\chinyang\AppData\Roaming\jupyter\runtime\kernel-e6ccca6e-68a9-42f3-8547-89081cb0b84a.json  ,RepFile=D:\python\外包管理\
+20200117 10:52:32,Program Start ,User=chinyang ,Path=d:\python\外包管理  ,FunName=C:\Users\chinyang\AppData\Roaming\jupyter\runtime\kernel-e6ccca6e-68a9-42f3-8547-89081cb0b84a.json  ,RepFile=D:\python\外包管理\
+20200117 10:53:26,Program Start ,User=chinyang ,Path=d:\python\外包管理  ,FunName=C:\Users\chinyang\AppData\Roaming\jupyter\runtime\kernel-e6ccca6e-68a9-42f3-8547-89081cb0b84a.json  ,RepFile=D:\python\外包管理\
+20200117 10:59:56,Program Start ,User=chinyang ,Path=d:\python\外包管理  ,FunName=C:\Users\chinyang\AppData\Roaming\jupyter\runtime\kernel-e6ccca6e-68a9-42f3-8547-89081cb0b84a.json  ,RepFile=D:\python\外包管理\
+20200117 12:03:16,Program Start ,User=chinyang ,Path=D:\python\外包管理  ,FunName=HELLO  ,RepFile=D:\python\外包管理\
+20200117 12:04:35,Program Start ,User=chinyang ,Path=D:\python\外包管理  ,FunName=GetPkgOspo  ,RepFile=D:\python\外包管理\
+20200117 12:04:38,SenPostMsg Errlocal variable 'msg' referenced before assignment
+20200117 12:07:28,Program Start ,User=chinyang ,Path=D:\python\外包管理  ,FunName=GetPkgOspo  ,RepFile=D:\python\外包管理\
+20200117 12:07:31,SenPostMsg Errlocal variable 'msg' referenced before assignment
+20200117 14:04:34,Program Start ,User=chinyang ,Path=D:\python\外包管理  ,FunName=GetPkgOspo  ,RepFile=D:\python\外包管理\
+20200117 14:04:37,SenPostMsg Errlocal variable 'msg' referenced before assignment
+20200117 14:05:04,Program Start ,User=chinyang ,Path=D:\python\外包管理  ,FunName=GetPkgOspo  ,RepFile=D:\python\外包管理\
+20200117 14:05:06,SenPostMsg Errlocal variable 'msg' referenced before assignment
+20200117 14:06:01,Program Start ,User=chinyang ,Path=D:\python\外包管理  ,FunName=GetPkgOspo  ,RepFile=D:\python\外包管理\
+20200117 14:06:03,SenPostMsg Errlocal variable 'msg' referenced before assignment
+20200117 14:06:41,Program Start ,User=chinyang ,Path=D:\python\外包管理  ,FunName=GetPkgOspo  ,RepFile=D:\python\外包管理\
+20200117 14:06:43,SenPostMsg Errlocal variable 'msg' referenced before assignment
+20200117 14:08:09,Program Start ,User=chinyang ,Path=D:\python\外包管理  ,FunName=GetPkgOspo  ,RepFile=D:\python\外包管理\
+20200117 14:08:12,SenPostMsg Errlocal variable 'msg' referenced before assignment
+20200117 15:05:36,Program Start ,User=chinyang ,Path=D:\python\外包管理  ,FunName=GetPkgOspo  ,RepFile=D:\python\外包管理\
+20200117 15:05:38,SenPostMsg Errlocal variable 'msg' referenced before assignment
+20200117 15:06:19,Program Start ,User=chinyang ,Path=D:\python\外包管理  ,FunName=GetPkgOspo  ,RepFile=D:\python\外包管理\
+20200117 15:06:21,SenPostMsg Errlocal variable 'msg' referenced before assignment
+20200117 15:06:52,Program Start ,User=chinyang ,Path=D:\python\外包管理  ,FunName=GetPkgOspo  ,RepFile=D:\python\外包管理\
+20200117 15:06:54,SenPostMsg Errlocal variable 'msg' referenced before assignment
+20200117 15:24:45,Program Start ,User=chinyang ,Path=D:\python\外包管理  ,FunName=GetPkgOspo  ,RepFile=D:\python\外包管理\
+20200117 15:24:47,SenPostMsg Errlocal variable 'msg' referenced before assignment
+20200117 15:40:18,SenPostMsg Errlocal variable 'msg' referenced before assignment
+20200117 15:40:49,SenPostMsg Errlocal variable 'msg' referenced before assignment
+20200117 15:44:32,SenPostMsg Errlocal variable 'msg' referenced before assignment
+20200117 15:45:03,SenPostMsg Errlocal variable 'msg' referenced before assignment
+20200117 15:52:35,SenPostMsg Errlocal variable 'msg' referenced before assignment
+20200117 15:54:10,SenPostMsg Errlocal variable 'msg' referenced before assignment
+20200117 15:55:03,SenPostMsg Errlocal variable 'msg' referenced before assignment
+20200117 15:58:16,Call API url=http://10.226.51.154:6500/api/RptFunction/pkgOutSoring, header={'Function': 'GetPkgOspo', 'user': 'chinyang'}
+20200117 15:58:16,SenPostMsg Errtuple index out of range
+20200117 16:16:58,Call API url=http://10.226.51.154:6500/api/RptFunction/pkgOutSoring, header={'Function': 'GetPkgOspo', 'user': 'chinyang'}
+20200117 16:16:58,SenPostMsg Errtuple index out of range
+20200117 16:20:19,Call API url=http://10.226.51.154:6500/api/RptFunction/pkgOutSoring, header={'Function': 'GetPkgOspo', 'user': 'chinyang'}
+20200117 16:22:36,Program Start ,User=chinyang ,Path=d:\python\外包管理  ,FunName=C:\Users\chinyang\AppData\Roaming\jupyter\runtime\kernel-7e5178cf-54db-4fbc-a9b4-6e4573c9add0.json  ,RepFile=D:\python\外包管理\
+20200117 16:31:39,Program Start ,User=chinyang ,Path=D:\python\外包管理  ,FunName=C:\Users\chinyang\AppData\Roaming\jupyter\runtime\kernel-7e5178cf-54db-4fbc-a9b4-6e4573c9add0.json  ,RepFile=D:\python\外包管理\
+20200117 16:39:26,Program Start ,User=chinyang ,Path=D:\python\外包管理  ,FunName=GetPkgOspo  ,RepFile=D:\python\外包管理\
+20200117 16:39:28,Call API url=http://10.226.51.154:6500/api/RptFunction/pkgOutSoring, header={'Function': 'GetPkgOspo', 'User': 'chinyang'}
+20200117 16:39:30,Call API url=http://10.226.51.154:6500/api/RptFunction/pkgOutSoring, header={'Function': 'GetPkgOspo', 'user': 'chinyang'}
+20200117 16:40:02,Program Start ,User=chinyang ,Path=D:\python\外包管理  ,FunName=GetPkgOspo  ,RepFile=D:\python\外包管理\
+20200117 16:40:04,Call API url=http://10.226.51.154:6500/api/RptFunction/pkgOutSoring, header={'Function': 'GetPkgOspo', 'User': 'chinyang'}
+20200117 16:40:49,Program Start ,User=chinyang ,Path=D:\python\外包管理  ,FunName=GetPkgOspo  ,RepFile=D:\python\外包管理\
+20200117 16:40:52,Call API url=http://10.226.51.154:6500/api/RptFunction/pkgOutSoring, header={'Function': 'GetPkgOspo', 'User': 'chinyang'}
+20200117 16:40:54,Call API url=http://10.226.51.154:6500/api/RptFunction/pkgOutSoring, header={'Function': 'GetPkgOspo', 'user': 'chinyang'}
+20200117 16:40:55,Program Start ,User=chinyang ,Path=D:\python\外包管理  ,FunName=GetPkgOspo  ,RepFile=D:\python\外包管理\
+20200117 16:40:57,Call API url=http://10.226.51.154:6500/api/RptFunction/pkgOutSoring, header={'Function': 'GetPkgOspo', 'User': 'chinyang'}
+20200117 23:07:48,Call API url=http://10.226.51.154:6500/api/RptFunction/pkgOutSoring, header={'Function': 'OspChipInv', 'user': 'chinyang'}
+20200117 23:07:48,SenPostMsg ErrExpecting value: line 1 column 1 (char 0)
+20200117 23:12:23,Call API url=http://10.226.51.154:6500/api/RptFunction/pkgOutSoring, header={'Function': 'OspChipInv', 'user': 'chinyang'}
+20200117 23:12:24,SenPostMsg ErrExpecting value: line 1 column 1 (char 0)
+20200117 23:14:21,Call API url=http://10.226.51.154:6500/api/RptFunction/pkgOutSoring, header={'Function': 'OspChipInv', 'user': 'chinyang'}
+20200117 23:14:21,SenPostMsg ErrExpecting value: line 1 column 1 (char 0)
+20200117 23:16:08,Call API url=http://10.226.51.154:6500/api/RptFunction/pkgOutSoring, header={'Function': 'OspChipInv', 'user': 'chinyang'}
+20200117 23:18:21,Call API url=http://10.226.51.154:6500/api/RptFunction/pkgOutSoring, header={'Function': 'OspChipInv', 'user': 'chinyang'}
+20200117 23:47:41,Call API url=http://10.226.51.154:6500/api/RptFunction/pkgOutSoring, header={'Function': 'OspChipInv', 'user': 'chinyang'}
+20200117 23:49:53,Call API url=http://10.226.51.154:6500/api/RptFunction/pkgOutSoring, header={'Function': 'OspChipInv', 'user': 'chinyang'}

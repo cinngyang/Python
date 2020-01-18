@@ -1,0 +1,14 @@
+Server,USR,PWD
+T01HIS1,fabods_ap,ods$rpt
+T05HIS01,fabods_ap,ods$rpt
+C01HIS01,fabods_ap,czods$rpt
+LEX_PROD,lextarerp,l$erp2020
+lexmsdb1,Viewer,ShiningQI
+lexmsdb2,Qplanning,qplan
+S01HIS01,pkgrpt_ap,rpt$520
+T01MES1,ledmes_ap,mes$520
+T05DEV02,fabods,fabods
+lexmsdb6\dw,BI-RPT,Happy)(view
+LEX_DEV,apps,ERPapps
+C01SMT,tw_smt_trace.app,Twabc.988
+lexdev09,hrap,test
