@@ -125,8 +125,18 @@ def GetSampleDataFrame():
     df=pd.DataFrame(data=data,columns=cols)
     return df
 
-
-
+#%%
+#Call 聚集測試
+app = xw.App(visible=True,add_book=False)
+FileName="PythonExcel.xlsm"
+wb=OpenExcel(app,FileName)
+ws=wb.sheets[0]
+myMacro=wb.macro("HelloWorld")
+myMacro.run()
+#wb.application.xl_app.Run()
+wb.save()
+wb.close()
+app.kill()
 
 #%% Demo Basic
     #https://kknews.cc/code/k6y6yxb.html
@@ -153,7 +163,7 @@ CellAddrs=findCell(ws,df.columns,'DIGT')
 
 
 #%%
-
+ws.api.Rows(1:2).Group
 
 # %%
 #rng = sht.range('a1').expand('table') nrows = rng.rows.count

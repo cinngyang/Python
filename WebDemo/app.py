@@ -43,7 +43,9 @@ def show_tables():
 @app.route("/jquerytable")
 def showJqueryTable():
     x=pd.DataFrame(np.random.randn(20, 5))   
+    #x=x.style.format("{:.2%}").render()
     xtable=df_to_html_with_id(x,"example",classes='display')
+
     return render_template("jqueryTable.html",data=xtable,title="Download")
 
 @app.route('/Getfunc',methods=['GET'])
