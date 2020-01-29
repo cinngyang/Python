@@ -1,3 +1,5 @@
+#模擬模組
+
 #%%
 from LexLib import ConnectDB
 import pandas as pd 
@@ -35,9 +37,6 @@ def ApiProcess(strfun):
         df=GetPkgModelGroup()
         return df
     
-
-
-
 
 
 #%%

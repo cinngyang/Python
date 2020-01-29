@@ -28,3 +28,16 @@ tr:nth-child(odd)		{ background-color:#eee; }
 tr:nth-child(even)	{ background-color:#fff; }
 
 tr:hover            { background-color: #ffff99;}
+
+.bg-img {
+  /* The image used */
+  background-image: url(/static/img/banner.jpg);
+  min-height: 50px;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* Needed to position the navbar */
+  position: relative;
+  color:white
+}

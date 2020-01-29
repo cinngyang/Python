@@ -1,10 +1,21 @@
+#基本功能介紹
+#1.網頁渲染 http://127.0.0.1:8000/tables 
+#2.JqueryTable
+#2.http://127.0.0.1:8000/Getfunc?function=GetModelName
+
+
+
+
 #%%
 from flask import Flask,request,jsonify
 from flask_cors import CORS
 from flask import render_template
-import os,testApi
+import os
 import pandas as pd 
 import numpy as np
+
+# Lextar 模組
+import testApi
 
 
 #Init App
@@ -20,10 +31,12 @@ def df_to_html_with_id(df, id, *args, **kwargs):
 @app.route('/',methods=['GET'])
 def home():
     return render_template("home.html")
+    #return render_template("LexTableTenp.html")
 
 @app.route("/tables")
 def show_tables():
     #http://127.0.0.1:8000/tables
+
     data = pd.DataFrame(
         {
         'Name':['Carly','Rachel','Rice','Jason'],
@@ -43,18 +56,18 @@ def show_tables():
 @app.route("/jquerytable")
 def showJqueryTable():
     x=pd.DataFrame(np.random.randn(20, 5))   
-    #x=x.style.format("{:.2%}").render()
     xtable=df_to_html_with_id(x,"example",classes='display')
-
-    return render_template("jqueryTable.html",data=xtable,title="Download")
+    return render_template("jqueryTable.html",data=xtable,title="Download",FunName="Test")
 
 @app.route('/Getfunc',methods=['GET'])
 def get():
     #http://127.0.0.1:8000/Getfunc?function=GetModelName
     strFun=request.args.get('function')
     #print(strFun)
-    df=testApi.ApiProcess(strFun)            
-    return render_template('view.html',tables=[df.to_html(classes='male')], titles=['Model Group'])
+    df=testApi.ApiProcess(strFun)   
+    xtable=df_to_html_with_id(df,"example",classes='display')
+    return render_template("jqueryTable.html",data=xtable,title="Download",FunName="Test")
+    #return render_template('view.html',tables=[df.to_html(classes='male')], titles=['Model Group'])
 
    
 

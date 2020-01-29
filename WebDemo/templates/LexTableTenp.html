@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet">
+  <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/style.css') }}">
+  <title>{{title}}</title>
+  <link rel="icon" href="{{ url_for('static', filename='img/LexIco.ico') }}">
+
+</head>
+
+<body>  
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="bg-img">
+              <ul class="nav navbar-nav">
+              <li class="navbar-brand" href="http://lexrpt02/eFABPlus/Default.aspx">eFab+</li>                        
+              <li class="active"><a href="#">{{Function}}</a></li>             
+            </ul>
+          </div>
+        </nav>
+</body>
