@@ -43,7 +43,9 @@ def city(state):
     [2,'CA','Reno'],[3,'NV','Log Angeles'],
     [4,'NV','San Diego']],columns=['id','state','name'])
     
-    citys=citys.loc[citys['state']==state]    
+    citys=citys.loc[citys['state']==state]   
+    citys=citys.reset_index(drop=True)  
+     
     citArray=[]
     for i in range(citys.shape[0]):
         cityobj={}
