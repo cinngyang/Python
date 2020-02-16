@@ -1,3 +1,4 @@
+#%%
 import smtplib
 from os.path import basename
 from email.mime.application import MIMEApplication
@@ -6,9 +7,11 @@ from email.utils import COMMASPACE, formatdate
 from email.mime.text import MIMEText
 from email.mime.base import MIMEBase
 from email.header import Header
+from email.mime.image import MIMEImage
 from email import encoders
 
-
+#https://blog.csdn.net/weixin_44152831/article/details/89214911
+#%%
 class MailTools():
             
     def __init__(self):
@@ -83,7 +86,33 @@ class MailTools():
             print('Email sent!')
         else :
             print('cc Email sent!')
-            
+
+    def SemdImageFile(self,Subject,Msg,FileName,to_addr,cc_Addr="",html=False):
+        """ """
+        msg = MIMEMultipart()
+        msg['From'] = self.from_addr
+        msg['To'] = to_addr
+        msg['Subject'] = Subject
+        if bool(cc_Addr): msg['CC'] = cc_Addr
+
+        msgAlternative = MIMEMultipart('alternative')
+        msg.attach(msgAlternative)
+        msgText = MIMEText(Msg, 'html')
+        msgAlternative.attach(msgText)
+
+        # This example assumes the image is in the current directory
+        fp = open(FileName, 'rb')
+        msgImage = MIMEImage(fp.read())
+        fp.close()
+
+        # Define the image's ID as referenced above
+        msgImage.add_header('Content-ID', '<image1>')
+        msg.attach(msgImage)
+
+        server = smtplib.SMTP(self.smtp_server, 25)       
+        server.send_message(msg)       
+        server.quit()
+
         
         
         

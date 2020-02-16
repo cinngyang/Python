@@ -1,0 +1,20 @@
+<!doctype html>
+<title>Condition Form Sample</title>
+<h1>Condition</h1>
+{% from "_field.html" import render_field %}
+<form method="POST" action="{{ url_for('basic') }}">
+  {{ form.hidden_tag() }}
+  <table>
+    {{ render_field(form.username) }}  
+    {{ render_field(form.password) }}
+    {{ render_field(form.remember) }}
+    {{ render_field(form.age) }}
+    {{ render_field(form.height) }}   
+    {{ render_field(form.birthday) }}
+    {{ render_field(form.job) }}
+    {{ render_field(form.hobby) }}
+    {{ render_field(form.description) }}
+    {{ render_field(form.accept_terms) }}
+  </table>
+  {{ form.submit }}
+</form>

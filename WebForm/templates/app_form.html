@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="uft-8">
+    </head>
+    <body>
+        <form method="POST">
+            {{form.csrf_token}}
+            {{form.state}}
+            {{form.city}}
+            <input type="submit">
+        </form>
+        <script>
+            let state_select=document.getElementById('state');
+            let city_select=document.getElementById('city');
+            state_select.onchange=function(){
+                state=state_select.value;
+                // alert(state)
+                
+                fetch('/city/'+state).then(function(response) {
+                    
+                    response.json().then(function(data) {
+                        //alert(data)
+                        //console.table(data);
+                        let optionHtmL="";
+                        for (let city of data.cities){
+                            optionHtmL+='<option value="'+city.id+'">'+city.name+'</option>'
+
+                        }
+                        city_select.innerHTML=optionHtmL
+
+                })
+            });
+            
+            }
+            
+
+        </script>
+    </body>
+</html>

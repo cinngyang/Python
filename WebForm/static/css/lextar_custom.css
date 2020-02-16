@@ -1,0 +1,40 @@
+﻿/* for circle img use*/
+.css-table a {
+    color: #0085a1;
+}
+
+.css-table .circular--portrait {
+    font-size: 25px;
+}
+
+.company-lextar .circular--portrait {
+    border: 3px solid #fff;
+    background: #fff;
+}
+
+.css-table .circular--portrait {
+    width: 40px;
+    height: 40px;
+}
+
+.circular--portrait {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 25px;
+}
+
+.css-table .circular--portrait img {
+    top: -4px;
+}
+
+.circular--portrait img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: -10px;
+}
