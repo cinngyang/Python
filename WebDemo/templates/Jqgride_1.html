@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- The jQuery library is a prerequisite for all jqSuite products -->
+  <script type="text/ecmascript" src="{{ url_for('static', filename='js/jquery.min.js')}}"></script>
+  
+  <script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
+  <!-- This is the Javascript file of jqGrid -->
+  <script type="text/ecmascript" src="{{ url_for('static', filename='js/jquery.jqGrid.min.js')}}"></script>
+  <!-- This is the localization file of the grid controlling messages, labels, etc.
+    <!-- We support more than 40 localizations -->
+  <script type="text/ecmascript" src="{{ url_for('static', filename='js/grid.locale-en.js')}}"></script>
+
+  <script type="text/javascript" language="javascript"
+    src="//cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+  <!-- A link to a jQuery UI ThemeRoller theme, more than 22 built-in and many more custom -->
+  <link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='css/jquery-ui.css')}}" />
+  <!-- The link to the CSS that the grid needs -->
+  <link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='css/ui.jqgrid.css')}}" />
+  <meta charset="utf-8" />
+  <title>jqGrid Export to CSV, PDF, Excel</title>
+</head>
+
+<body>
+
+  <table id="jqGrid"></table>
+  <div id="jqGridPager"></div>
+  <button id="export">Export to Excel</button>
+
+
+  <script type="text/javascript">
+
+    var mydata = [
+      { id: "1", invdate: "2007-10-01", name: "test", note: "note", amount: "200.00", tax: "10.00", total: "210.00" },
+      { id: "2", invdate: "2007-10-02", name: "test2", note: "note2", amount: "300.00", tax: "20.00", total: "320.00" },
+      { id: "3", invdate: "2007-09-01", name: "test3", note: "note3", amount: "400.00", tax: "30.00", total: "430.00" },
+      { id: "4", invdate: "2007-10-04", name: "test", note: "note", amount: "200.00", tax: "10.00", total: "210.00" },
+      { id: "5", invdate: "2007-10-05", name: "test2", note: "note2", amount: "300.00", tax: "20.00", total: "320.00" },
+      { id: "6", invdate: "2007-09-06", name: "test3", note: "note3", amount: "400.00", tax: "30.00", total: "430.00" },
+      { id: "7", invdate: "2007-10-04", name: "test", note: "note", amount: "200.00", tax: "10.00", total: "210.00" },
+      { id: "8", invdate: "2007-10-03", name: "test2", note: "note2", amount: "300.00", tax: "20.00", total: "320.00" },
+      { id: "9", invdate: "2007-09-01", name: "test3", note: "note3", amount: "400.00", tax: "30.00", total: "430.00" }
+    ];
+
+    $(document).ready(function () {
+      $("#jqGrid").jqGrid({
+                datatype: "local",
+				data: mydata,
+                height: 250,
+                colModel: [
+                    { label: 'Inv No', name: 'id', width: 75, key:true },
+                    { label: 'Date', name: 'invdate', width: 90 },
+                    { label: 'Client', name: 'name', width: 100 },
+                    { label: 'Amount', name: 'amount', width: 80 },
+                    { label: 'Tax', name: 'tax', width: 80 },
+                    { label: 'Total', name: 'total', width: 80 },
+                    { label: 'Notes', name: 'note', width: 150 }
+                ],
+                viewrecords: true, // show the current page, data rang and total records on the toolbar
+                caption: "Load jqGrid through Javascript Array"
+            });
+     
+  
+      $("#export").on("click", function () {
+        $("#jqGrid").jqGrid("exportToExcel", {
+          includeLabels: true,
+          includeGroupHeader: true,
+          includeFooter: true,
+          fileName: "jqGridExport.xlsx",
+          maxlength: 40 // maxlength for visible string data 
+        });
+      });
+    });
+  </script>
+
+
+</body>
+
+</html>
